@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="sozlukforum_script.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        
+    <img alt="image" Height="35px" Width="94px" src="App_GlobalResources/logo.png" />
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><textbox></textbox> 
+        <asp:Button ID="Button1" runat="server" Text="Button" />
+        <a href="login.aspx">Giriş Yap</a>
+        <a href="login.aspx">Kaydol</a>
+        
+       
+        <asp:Label ID="label_username" runat="server" Text="user_name"></asp:Label>
+        <asp:HyperLink ID="label_profile" runat="server">Profil</asp:HyperLink>
+        <asp:HyperLink ID="hyperlink_signout" runat="server">Çıkış Yap</asp:HyperLink>
+       
+           <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+           
+        </div>
+    </form>
+</body>
+</html>
